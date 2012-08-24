@@ -394,13 +394,10 @@ function woocommerce_product_add_to_cart( $atts ) {
 
 		ob_start();
 		?>
-		<p class="product" style="<?php echo $atts['style']; ?>">
 
-			<?php echo $product->get_price_html(); ?>
+		<?php woocommerce_template_loop_add_to_cart(); ?>
 
-			<?php woocommerce_template_loop_add_to_cart(); ?>
-
-		</p><?php
+		<?php
 
 		return ob_get_clean();
 
