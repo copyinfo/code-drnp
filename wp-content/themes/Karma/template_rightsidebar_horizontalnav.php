@@ -12,7 +12,8 @@ Template Name: Right Sidebar
 <?php truethemes_before_main_hook();// action hook, see truethemes_framework/global/hooks.php ?>
 
 <div id="main">
-<?php get_template_part('theme-template-part-tools','childtheme'); ?>
+<div class="main-area">
+
 
 
 <div class="main-holder">
