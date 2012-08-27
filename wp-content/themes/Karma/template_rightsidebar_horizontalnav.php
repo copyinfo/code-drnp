@@ -36,7 +36,7 @@ get_template_part('theme-template-part-subnav-horizontal','childtheme');}else{
 
 
 <div id="sidebar" class="right_sidebar">
-<?php generated_dynamic_sidebar(); ?>
+<?php dynamic_sidebar( 'About/Contact' ); ?>
 </div><!-- end sidebar -->
 </div><!-- end main-holder -->
 </div><!-- main-area -->
