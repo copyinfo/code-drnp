@@ -178,6 +178,7 @@ display:table;
 
 #wrapper #header {
 display:block;
+height:220px;
 }
 
 .top-block .top-holder {
@@ -190,13 +191,15 @@ padding:4px 0;
 }
 
 #header .rays {
-background:url(images/_global/rays.png) 50% 0 no-repeat;
+	background: #07aacb url(http://i.imgur.com/n2xKR.png) no-repeat;
+background-size: 25.5% 100%;
+height:220px;
 }
 
 #header .header-area {
 width:980px;
 margin:0 auto;
-padding:38px 0 33px;
+height: 220px;
 }
 
 #main {
@@ -1065,7 +1068,7 @@ position:absolute;
 /*---------------------------------*/
 /* 1. Main Navigation
 /*---------------------------------*/
-#menu-main-nav {list-style:none;margin:0;padding:0;list-style:none;float:right;}
+#menu-main-nav {list-style:none;margin:0;padding:0;margin-top:-80px;float:left;margin-left:250px;}
 #menu-main-nav a {outline: none;}
 #menu-main-nav li {float:left;padding:5px 31px 12px 13px;position:relative;vertical-align:top;height:1%;margin-right: 2px;}
 #menu-main-nav ul li {background: none !important;}
@@ -1343,6 +1346,7 @@ text-decoration:underline;
 float:left;
 margin-left:22px;
 outline:none;
+height: 220px;
 }
 
 #header .toolbar-left a,#header .toolbar-right a {
