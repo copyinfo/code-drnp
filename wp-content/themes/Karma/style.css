@@ -3138,7 +3138,7 @@ td#today{font-weight:bold;}
 
 /*---------------------------------*/
 
-.testimonials, .testimonials_static {background:#fdbf57 url(images/_global/bg_quote_wrap.png) 25px 25px no-repeat;border:1px solid #D8D9D6;padding-bottom:60px;margin-bottom:15px;}
+.testimonials, .testimonials_static {background:#fdbf57 ;border:1px solid #D8D9D6;padding-bottom:60px;margin-bottom:15px;}
 
 .content_full_width .testimonials blockquote, .content_full_width .testimonials_static blockquote{padding:35px 0 0 95px !important;width:800px !important;font-family:Georgia, "Times New Roman", Times, serif;font-size:14px;color:#808080;font-style:italic;display:block;}
 
