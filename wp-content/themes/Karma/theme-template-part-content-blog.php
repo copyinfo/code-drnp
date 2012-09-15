@@ -78,7 +78,7 @@ echo $html;
 ?>
 
 <?php limit_content(80,  true, ''); ?>
-<a class="ka_button small_button" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span><?php echo $ka_blogbutton; ?></span></a>
+<a class="ka_button small_button small_limegreen" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><span><?php echo $ka_blogbutton; ?></span></a>
 <?php if(function_exists('selfserv_shareaholic')) { selfserv_shareaholic(); } ?>
 
 <?php if ($ka_post_date != "true"): ?>
