@@ -23,3 +23,15 @@ h3.red {
 .pink {
 	color: #BD394C;
 }
+
+.tabbed {
+margin-left: 20px;
+}
+
+.post_date{
+background: #B1C651;
+}
+
+.month {
+color: #FFF !important;
+}
