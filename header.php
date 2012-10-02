@@ -6,6 +6,10 @@
 <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
+<meta property="og:title" content="drNONPROFIT"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:url" content="<?php bloginfo('url'); ?>"/>
+<meta property="og:image" content="<?php bloginfo('url'); ?>/wp-content/uploads/drNONPROFIT2.png"  /> 
 <?php wp_head(); ?>
 <!--[if lte IE 8]>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lt8.css" media="screen"/>
