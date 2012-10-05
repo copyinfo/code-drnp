@@ -27,4 +27,15 @@ function bootstrap_form()
 }
 add_action('wp_enqueue_scripts', 'bootstrap_form');
 
+/**
+ * Added by Jonathon McDonald
+ */
+function go_back_button()
+{
+	echo'<p style="float: left; width:300px;"><a href="http://drnonprofit.com/coaching/">Continue Shopping</a>
+	<br />
+	Only one subscription needs to be purchased at a time, additional purchases may be made after this one is completed</p>';
+}
+add_action('woocommerce_review_order_before_submit', 'go_back_button');
+
 ?>
