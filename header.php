@@ -14,7 +14,9 @@
 <!--[if lte IE 8]>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/lt8.css" media="screen"/>
 <![endif]-->
-<link rel="stylesheet" href="http://drnonprofit.com/dev/wp-content/themes/Karma/css/bootstrap.css" type="text/css" media="all" />
+<?php if(!is_page('checkout')): ?>
+<link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/Karma/css/bootstrap.css" type="text/css" media="all" />
+<?php endif; ?>
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" <?php if (is_page_template('template-homepage-3D.php') || is_page_template('template-homepage-jquery-2.php')) {echo 'class="big-banner"';} ?>>
