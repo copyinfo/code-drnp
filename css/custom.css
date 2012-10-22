@@ -1,5 +1,7 @@
 /* By Jonathon McDonald
  ***********************/
+.orange { color: #ff8a00 !important; }
+.green { color: #89b100 !important; }
 
 .orange-header { color: orange !important; } 
 .page-og-header { line-height: 30px;}
@@ -14,6 +16,7 @@ h1.call-to-action {
 	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
+line-height: 32px;
 }
 
 h3.red {
@@ -23,6 +26,8 @@ h3.red {
 .pink {
 	color: #BD394C;
 }
+
+.burgundy { color: #4c1b23; }
 
 .tabbed {
 margin-left: 20px;
@@ -36,11 +41,47 @@ background: #B1C651;
 color: #FFF !important;
 }
 
-.quest-input
+span.wpcf7-not-valid-tip {
+left: 2%;
+top: -8px;
+background: none;
+border: none;
+color: red;
+}
+
+div.wpcf7-validation-errors {
+clear: both;
+}
+
+div.wpcf7-mail-sent-ok {
+clear: both;
+}
+
+/* For the cart */
+.chzn-results{ max-height: 80px; }
+.chzn-single {
+height: 28px;
+line-height: 29px;
+}
+.form-row-last {
+float:left;
+}
+.col-1 {
+margin-bottom: 50px;
+}
+
+#payment_method_stripe {
+display: none;
+}
+
+.centered { text-align: center;}
+.blue-h3 {font-size: 24px; color: #00176a; font-style: italic; font-weight: bolder; line-height: 26px;}
+.red-h3 {font-size: 24px; color: #fc1d00; font-weight: bolder; line-height: 26px;}
+.p-red { color: #fc1d00;}
+.module-header{background-color: #00176A; display: inline-block; width: 100%; text-align: center; font-size: 24px; color: #FFF; padding: 10px; line-height: 26px; margin-top: 5px; margin-bottom: 5px;}
+.legal { font-size: 8px; font-style: italic;}
+
+p
 {
-	border-radius: 5px;
-	border: 1px solid #888;
-	padding: 5px;
-	opacity: .8;
-	display: inline-block;
+	font-size: 1.3em;
 }
