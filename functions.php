@@ -38,6 +38,33 @@ function go_back_button()
 }
 add_action('woocommerce_review_order_before_submit', 'go_back_button');
 
+/**
+ * Having a subscription and then trying to add another item
+ * does not redirect to the cart properly.  This will now cause
+ * an add to cart link to properly redirect.  
+ *
+ * @author Jonathon McDonald <jon@onewebcentric.com>
+ */
+function jm_sub_fix_filter( $url )
+{
+	return '/cart/';
+}
+
+/**
+ * This ensures that a subscription is in the cart so the above fix
+ * will only work if there is a bus in the cart.  
+ *
+ * @author Jonathon McDonald <jon@onewebcentric.com>
+ */
+function jm_sub_fix_action( $valid, $product_id, $quantity )
+{
+	global $woocommerce;
+
+	if ( !WC_Subscriptions_Product::is_subscription( $product_id ) && WC_Subscriptions_Cart::cart_contains_subscription() ) 
+		add_filter( 'add_to_cart_redirect', 'jm_sub_fix_filter', 10, 1 );
 
 
+	return $valid;
+}
+add_action( 'woocommerce_add_to_cart_validation', 'jm_sub_fix_action', 9, 3);
 ?>

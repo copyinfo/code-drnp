@@ -1,0 +1,36 @@
+<div id="payment-info">
+	<h2>Choose Your Method of Payment</h2>
+	We're excited to share information that will help you develop a website that can excite investors, and inspire clients.  Select your payment option to continue
+</div>
+<div id="payment-options">
+	<div id="payment-option-1">
+		<input type="radio" name="group" id="add-to-cart1" value="?addtocart1" />  <h3>Pay $425.00</h3>
+		Pay in full and enjoy 10% off.
+	</div>
+	<div id="payment-option-2">
+		<input type="radio" name="group" id="add-to-cart2" value="?addtocart2" />  <h3>Pay $219.97</h3>
+		Pay $219.97 per month in just two easy payments.  
+	</div>
+	<a id="pay-now" href="?add-to-cart=7378" class="btn btn-primary btn-large" style="display: none; text-decoration:none;">Pay Now</a>
+</div>
+<script type="text/javascript">
+jQuery('document').ready(function($) {
+	// Begin by hiding the pay now button
+	$('#pay-now').hide();
+	// Append proper add to cart link
+	$('#add-to-cart1').click(function() {
+		$('#pay-now').hide();
+		$('#pay-now').html('Pay Now');
+		$('#pay-now').fadeIn('slow', function() {
+			$('#pay-now').attr('href', '?add-to-cart=7378');
+		});
+	});
+	$('#add-to-cart2').click(function() {
+		$('#pay-now').hide();
+		$('#pay-now').html('Pay Monthly');
+		$('#pay-now').fadeIn('slow', function() {
+			$('#pay-now').attr('href', '?add-to-cart=7379');
+		});
+	});
+});
+</script>
