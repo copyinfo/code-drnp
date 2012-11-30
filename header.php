@@ -92,6 +92,11 @@ if ($ka_logo_text == ''){
 
 
 <?php truethemes_before_primary_navigation_hook();// action hook, see truethemes_framework/global/hooks.php ?>
+<?php if( is_page( 7459 ) ): ?>
+  <div style="display:inline-block; max-width:300px; margin-top: 80px; margin-left: 25px">
+    <?php echo do_shortcode('[contact-form-7 id="7458" title="Header Form"]'); ?>
+  </div>
+<?php endif; ?>
 <?php if(has_nav_menu('Primary Navigation')): ?>
 <ul id="menu-main-nav">
 <?php wp_nav_menu(array('theme_location' => 'Primary Navigation' , 'depth' => 0 , 'container' =>false , 'walker' => new description_walker() )); ?>
@@ -99,3 +104,4 @@ if ($ka_logo_text == ''){
 <?php endif; ?>
 
 <?php truethemes_after_primary_navigation_hook();// action hook, see truethemes_framework/global/hooks.php ?>
+
