@@ -16,7 +16,7 @@ h1.call-to-action {
 	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
-line-height: 32px;
+	line-height: 32px;
 }
 
 h3.red {
@@ -84,4 +84,52 @@ display: none;
 p
 {
 	font-size: 1.3em;
+}
+
+#payment-options 
+{
+	display: inline-block;
+	width: 97%;
+}
+
+#payment-option-1
+{
+	width: 47%;
+	float: left;
+}
+
+#payment-option-2
+{
+	width: 47%;
+	float: right;
+}
+
+li
+{
+    font-size: 1.3em;
+}
+
+li.menu-item
+{
+	font-size: 14px;
+}
+
+.header-area .wpcf7-not-valid-tip
+{
+	left: 100% !important;
+	color: #FFF !important;
+}
+
+.header-area .wpcf7-validation-errors
+{
+	display: inline-block !important;
+	position: absolute !important;
+	margin-top: -190px;
+	margin-left: -100px;
+	color: white;
+}
+
+.cart_totals table
+{
+	float: right;
 }
